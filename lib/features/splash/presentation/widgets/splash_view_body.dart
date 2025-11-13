@@ -19,12 +19,13 @@ class _SplashViewBodyState extends State<SplashViewBody> {
   }
   @override
   Widget build(BuildContext context) {
+    final la = Directionality.of(context) == TextDirection.ltr;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Row(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: la ? MainAxisAlignment.start : MainAxisAlignment.end,
           children: [SvgPicture.asset(Assets.imagesPlant)],
         ),
         SvgPicture.asset(Assets.imagesLogo),
