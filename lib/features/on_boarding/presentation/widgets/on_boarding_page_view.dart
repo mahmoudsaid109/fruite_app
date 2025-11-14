@@ -6,13 +6,16 @@ import 'package:fruite_app/features/on_boarding/presentation/widgets/page_view_i
 import 'package:fruite_app/generated/l10n.dart';
 
 class OnBoardingPageView extends StatelessWidget {
-  const OnBoardingPageView({super.key});
+  const OnBoardingPageView({super.key, required this.pageController});
+  final PageController pageController;
 
   @override
   Widget build(BuildContext context) {
     return PageView(
+      controller: pageController,
       children: [
         PageViewItems(
+          isVisible: true,
           image: Assets.imagesPageViewItem1Image,
           backgroundImage: Assets.imagesPageViewItem1BackgroundImage,
           subtitle: S.of(context).discoverAppTitle1,
@@ -36,6 +39,7 @@ class OnBoardingPageView extends StatelessWidget {
           ),
         ),
         PageViewItems(
+          isVisible: false,
           image: Assets.imagesPageViewItem2Image,
           backgroundImage: Assets.imagesPageViewItem2BackgroundImage,
           subtitle: S.of(context).discoverAppTitle2,
