@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "searcAndShop": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "startNow": MessageLookupByLibrary.simpleMessage("Start Now"),
     "welcome": MessageLookupByLibrary.simpleMessage("Welcome to "),
   };
 }

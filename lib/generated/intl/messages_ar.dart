@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "searcAndShop": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
     "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+    "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
     "welcome": MessageLookupByLibrary.simpleMessage("مرحبا بك في "),
   };
 }
