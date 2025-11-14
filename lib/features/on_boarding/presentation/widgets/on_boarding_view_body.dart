@@ -1,8 +1,10 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:fruite_app/core/global_widgets/custom_button.dart';
+import 'package:fruite_app/core/services/shared_prefrences_senglton.dart';
 import 'package:fruite_app/core/utils/app_colors.dart';
 import 'package:fruite_app/core/utils/constants.dart';
+import 'package:fruite_app/features/auth/presentation/views/login_view.dart';
 import 'package:fruite_app/features/on_boarding/presentation/widgets/on_boarding_page_view.dart';
 import 'package:fruite_app/generated/l10n.dart';
 
@@ -14,8 +16,8 @@ class OnBoardingViewBody extends StatefulWidget {
 }
 
 class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
- late PageController pageController;
- var currentPage = 0;
+  late PageController pageController;
+  var currentPage = 0;
   @override
   void initState() {
     super.initState();
@@ -26,11 +28,13 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
       });
     });
   }
+
   @override
   void dispose() {
     pageController.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -40,22 +44,29 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
           dotsCount: 2,
           decorator: DotsDecorator(
             activeColor: AppColors.primaryColor,
-            color: currentPage == 1 ? AppColors.primaryColor : AppColors.primaryColor.withOpacity(0.5),
+            color:
+                currentPage == 1
+                    ? AppColors.primaryColor
+                    : AppColors.primaryColor.withOpacity(0.5),
           ),
         ),
         const SizedBox(height: 29),
         Visibility(
-          visible: currentPage == 1? true : false,
+          visible: currentPage == 1 ? true : false,
           maintainSize: true,
           maintainAnimation: true,
           maintainState: true,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: kHorizintalPadding),
-            child: CustomButton(text: S.of(context).startNow, onPressed: () {
-              // Navigator.of(context).pushReplacementNamed(
-              //   SigninView.routeName,
-              // );
-            }),
+            child: CustomButton(
+              text: S.of(context).startNow,
+              onPressed: () {
+                 Prefs.setBool(kIsOnBoardingViewSeen, true);
+                Navigator.of(
+                  context,
+                ).pushReplacementNamed(LoginView.routeName);
+              },
+            ),
           ),
         ),
         const SizedBox(height: 43),
