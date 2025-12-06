@@ -104,14 +104,19 @@ class S {
     return Intl.message('Login', name: 'login', desc: '', args: []);
   }
 
-  /// `Register`
+  /// `New Account`
   String get register {
-    return Intl.message('Register', name: 'register', desc: '', args: []);
+    return Intl.message('New Account', name: 'register', desc: '', args: []);
   }
 
   /// `Email`
   String get email {
     return Intl.message('Email', name: 'email', desc: '', args: []);
+  }
+
+  /// `Full Name`
+  String get fullName {
+    return Intl.message('Full Name', name: 'fullName', desc: '', args: []);
   }
 
   /// `Password`

@@ -27,13 +27,16 @@ class LoginViewBody extends StatelessWidget {
               CustomeTextFormField(
                 hintText: S.of(context).email,
                 textInputType: TextInputType.emailAddress,
-                icon: Icon(Icons.email, color: Color(0xFFC9CECF)),
+                icon: Icon(Icons.email, color: AppColors.textFieldIconColor),
               ),
               SizedBox(height: kTopPaddding),
               CustomeTextFormField(
                 hintText: S.of(context).password,
                 textInputType: TextInputType.visiblePassword,
-                icon: Icon(Icons.remove_red_eye, color: Color(0xFFC9CECF)),
+                icon: Icon(
+                  Icons.remove_red_eye,
+                  color: AppColors.textFieldIconColor,
+                ),
               ),
               SizedBox(height: kTopPaddding),
               Align(

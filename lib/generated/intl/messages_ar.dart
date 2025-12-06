@@ -34,6 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "forgotPassword": MessageLookupByLibrary.simpleMessage(
       "هل نسيت كلمة المرور؟",
     ),
+    "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطةأبل"),
     "loginWithFacebook": MessageLookupByLibrary.simpleMessage(
@@ -44,7 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "or": MessageLookupByLibrary.simpleMessage("أو"),
     "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
-    "register": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
+    "register": MessageLookupByLibrary.simpleMessage("حساب جديد"),
     "searcAndShop": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
     "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),

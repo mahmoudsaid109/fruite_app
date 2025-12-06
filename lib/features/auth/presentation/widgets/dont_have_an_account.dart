@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:fruite_app/features/auth/presentation/views/signup_view.dart';
 import 'package:fruite_app/generated/l10n.dart';
 
 import '../../../../../core/utils/app_colors.dart';
@@ -31,7 +32,7 @@ class DontHaveAnAccountWidget extends StatelessWidget {
           TextSpan(
             recognizer: TapGestureRecognizer()
               ..onTap = () {
-                // Navigator.pushNamed(context, SignupView.routeName);
+                Navigator.pushNamed(context, SignupView.routeName);
               },
             text: S.of(context).createAccount,
             style:

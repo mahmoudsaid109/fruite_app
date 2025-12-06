@@ -34,6 +34,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+    "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "login": MessageLookupByLibrary.simpleMessage("Login"),
     "loginWithApple": MessageLookupByLibrary.simpleMessage("Login with Apple"),
     "loginWithFacebook": MessageLookupByLibrary.simpleMessage(
@@ -44,7 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "or": MessageLookupByLibrary.simpleMessage("Or"),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
-    "register": MessageLookupByLibrary.simpleMessage("Register"),
+    "register": MessageLookupByLibrary.simpleMessage("New Account"),
     "searcAndShop": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "startNow": MessageLookupByLibrary.simpleMessage("Start Now"),
