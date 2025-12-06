@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fruite_app/core/global_widgets/custome_appbar.dart';
+import 'package:fruite_app/features/auth/presentation/widgets/login_view_body.dart';
+import 'package:fruite_app/generated/l10n.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -7,22 +10,11 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Login'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.arrow_back_ios_new),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-          ),
-        ],
-      ),
-      
-      body: Center(
-        child: Text('Login Screen'),
-      ),
+      appBar: buildAppBar(context, title: S.of(context).login),
+
+      body: const LoginViewBody(),
     );
   }
+
+
 }

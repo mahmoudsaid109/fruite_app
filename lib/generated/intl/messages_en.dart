@@ -28,6 +28,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "discoverAppTitle2": MessageLookupByLibrary.simpleMessage(
       "We offer you the finest carefully selected fruits. Check out the details, photos, and reviews to make sure you choose the perfect fruit.",
     ),
+    "login": MessageLookupByLibrary.simpleMessage("Login"),
+    "register": MessageLookupByLibrary.simpleMessage("Register"),
     "searcAndShop": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "startNow": MessageLookupByLibrary.simpleMessage("Start Now"),
