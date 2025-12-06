@@ -12,5 +12,8 @@
     "forgotPassword":"Forgot Password?",
     "dontHaveAnAccount":"Don't have an account?",
     "createAccount":"Create Account",
-    "or":"Or"
+    "or":"Or",
+    "loginWithGoogle":"Login with Google",
+    "loginWithApple":"Login with Apple",
+    "loginWithFacebook":"Login with Facebook"
 }
