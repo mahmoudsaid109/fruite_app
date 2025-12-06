@@ -26,6 +26,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "من خلال إنشاء حساب ، فإنك توافق على",
     ),
     "createAccount": MessageLookupByLibrary.simpleMessage("قم بإنشاء حساب"),
+    "createNewAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
     "discoverAppTitle1": MessageLookupByLibrary.simpleMessage(
       "اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.",
     ),
@@ -38,6 +39,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "هل نسيت كلمة المرور؟",
     ),
     "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
+    "haveAnAccount": MessageLookupByLibrary.simpleMessage(
+      "تمتلك حساب بالفعل ؟",
+    ),
     "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
     "loginWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطةأبل"),
     "loginWithFacebook": MessageLookupByLibrary.simpleMessage(

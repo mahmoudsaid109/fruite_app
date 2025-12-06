@@ -18,5 +18,7 @@
     "loginWithApple":"Login with Apple",
     "loginWithFacebook":"Login with Facebook",
     "byCreatingAccount":"By creating an account, you agree to",
-    "ourTermsAndConditions":"our Terms and Conditions"
+    "ourTermsAndConditions":"our Terms and Conditions",
+    "createNewAccount":"Create New Account",
+    "haveAnAccount":"Already have an account?"
 }

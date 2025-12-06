@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:fruite_app/core/global_widgets/custom_button.dart';
 import 'package:fruite_app/core/global_widgets/custome_text_form_field.dart';
 import 'package:fruite_app/core/utils/app_colors.dart';
 import 'package:fruite_app/core/utils/constants.dart';
+import 'package:fruite_app/features/auth/presentation/widgets/have_an_account_widget.dart';
 import 'package:fruite_app/features/auth/presentation/widgets/terms_and_conditions.dart';
 import 'package:fruite_app/generated/l10n.dart';
 
@@ -48,6 +50,13 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                 isTermsAccepted = value;
               },
             ),
+            SizedBox(height: 30),
+            CustomButton(
+              onPressed: () {},
+              text: S.of(context).createNewAccount,
+            ),
+            SizedBox(height: 24),
+            HaveAnAccountWidget(),
           ],
         ),
       ),
