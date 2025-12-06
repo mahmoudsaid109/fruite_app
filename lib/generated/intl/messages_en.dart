@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
+      "By creating an account, you agree to",
+    ),
     "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
     "discoverAppTitle1": MessageLookupByLibrary.simpleMessage(
       "Discover a unique shopping experience with FruitHUB. Explore our wide selection of premium fresh fruits and enjoy the best deals and top quality.",
@@ -44,6 +47,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Login with Google",
     ),
     "or": MessageLookupByLibrary.simpleMessage("Or"),
+    "ourTermsAndConditions": MessageLookupByLibrary.simpleMessage(
+      "our Terms and Conditions",
+    ),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
     "register": MessageLookupByLibrary.simpleMessage("New Account"),
     "searcAndShop": MessageLookupByLibrary.simpleMessage("Search and Shop"),

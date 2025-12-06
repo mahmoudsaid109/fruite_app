@@ -16,5 +16,7 @@
     "or":"Or",
     "loginWithGoogle":"Login with Google",
     "loginWithApple":"Login with Apple",
-    "loginWithFacebook":"Login with Facebook"
+    "loginWithFacebook":"Login with Facebook",
+    "byCreatingAccount":"By creating an account, you agree to",
+    "ourTermsAndConditions":"our Terms and Conditions"
 }

@@ -16,6 +16,8 @@
     "or":"أو",
     "loginWithGoogle":"تسجيل بواسطة جوجل",
     "loginWithApple":"تسجيل بواسطةأبل",
-    "loginWithFacebook":"تسجيل بواسطة فيسبوك"
+    "loginWithFacebook":"تسجيل بواسطة فيسبوك",
+    "byCreatingAccount":"من خلال إنشاء حساب ، فإنك توافق على",
+    "ourTermsAndConditions":"الشروط والأحكام الخاصة بنا"
 
 }

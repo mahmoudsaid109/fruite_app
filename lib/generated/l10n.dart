@@ -188,6 +188,26 @@ class S {
       args: [],
     );
   }
+
+  /// `By creating an account, you agree to`
+  String get byCreatingAccount {
+    return Intl.message(
+      'By creating an account, you agree to',
+      name: 'byCreatingAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `our Terms and Conditions`
+  String get ourTermsAndConditions {
+    return Intl.message(
+      'our Terms and Conditions',
+      name: 'ourTermsAndConditions',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
