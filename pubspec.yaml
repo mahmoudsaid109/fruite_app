@@ -1,6 +1,6 @@
 name: fruite_app
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 
 version: 1.0.0+1
 
@@ -16,8 +16,10 @@ dependencies:
   firebase_core: ^4.3.0
   flutter:
     sdk: flutter
+  flutter_bloc: ^9.1.1
   flutter_localizations:
     sdk: flutter
+  get_it: ^9.2.0
   intl: ^0.20.2
   shared_preferences: ^2.5.3
   svg_flutter: ^0.0.1
@@ -43,7 +45,7 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: 'Cairo'
+    - family: "Cairo"
       fonts:
         - asset: assets/fonts/Cairo-Regular.ttf
         - asset: assets/fonts/Cairo-Medium.ttf
