@@ -20,7 +20,9 @@
     "byCreatingAccount":"من خلال إنشاء حساب ، فإنك توافق على",
     "ourTermsAndConditions":"الشروط والأحكام الخاصة بنا",
     "createNewAccount":"إنشاء حساب جديد",
-    "haveAnAccount":"تمتلك حساب بالفعل ؟"
+    "haveAnAccount":"تمتلك حساب بالفعل ؟",
+    "fieldRequired":"هذا الحقل مطلوب",
+    "passwordIsTooWeak":"كلمة المرور التي أدخلتها ضعيفة جدا"
 
 
 }

@@ -1,19 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:fruite_app/core/utils/app_text_styles.dart';
+import 'package:fruite_app/generated/l10n.dart';
 
 class CustomeTextFormField extends StatelessWidget {
   const CustomeTextFormField({
     super.key,
     required this.hintText,
     required this.textInputType,
-     this.icon,
+    this.icon, this.onSaved,
   });
   final String hintText;
   final TextInputType textInputType;
   final Widget? icon;
+  final void Function(String?)? onSaved;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      onSaved: onSaved ,
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return S.of(context).fieldRequired;
+        }
+        return null;
+      },
       keyboardType: textInputType,
       decoration: InputDecoration(
         suffixIcon: icon,
@@ -31,7 +40,7 @@ class CustomeTextFormField extends StatelessWidget {
   OutlineInputBorder buildOutlineInputBorder() {
     return OutlineInputBorder(
       borderRadius: BorderRadius.circular(4.0),
-      borderSide: BorderSide(width: 1, color:Color(0xFFE6E9E9)),
+      borderSide: BorderSide(width: 1, color: Color(0xFFE6E9E9)),
     );
   }
 }

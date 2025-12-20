@@ -228,6 +228,26 @@ class S {
       args: [],
     );
   }
+
+  /// `This field is required`
+  String get fieldRequired {
+    return Intl.message(
+      'This field is required',
+      name: 'fieldRequired',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The password you provided is too weak`
+  String get passwordIsTooWeak {
+    return Intl.message(
+      'The password you provided is too weak',
+      name: 'passwordIsTooWeak',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

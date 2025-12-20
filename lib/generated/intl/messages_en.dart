@@ -39,6 +39,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Don\'t have an account?",
     ),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
+    "fieldRequired": MessageLookupByLibrary.simpleMessage(
+      "This field is required",
+    ),
     "forgotPassword": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
     "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
     "haveAnAccount": MessageLookupByLibrary.simpleMessage(
@@ -57,6 +60,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "our Terms and Conditions",
     ),
     "password": MessageLookupByLibrary.simpleMessage("Password"),
+    "passwordIsTooWeak": MessageLookupByLibrary.simpleMessage(
+      "The password you provided is too weak",
+    ),
     "register": MessageLookupByLibrary.simpleMessage("New Account"),
     "searcAndShop": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),
