@@ -5,8 +5,8 @@ import 'package:fruite_app/features/auth/domain/repos/auth_repo.dart';
 
 part 'sign_state.dart';
 
-class SignCubit extends Cubit<SignState> {
-  SignCubit(this.authRepo) : super(SignInitial());
+class SigInCubit extends Cubit<SignState> {
+  SigInCubit(this.authRepo) : super(SignInitial());
   final AuthRepo authRepo;
 
   Future<void> signIn(String email, String password) async {
