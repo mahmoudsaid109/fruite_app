@@ -4,7 +4,7 @@ import 'package:fruite_app/core/global_widgets/custom_button.dart';
 import 'package:fruite_app/core/services/shared_prefrences_senglton.dart';
 import 'package:fruite_app/core/utils/app_colors.dart';
 import 'package:fruite_app/core/utils/constants.dart';
-import 'package:fruite_app/features/auth/presentation/views/login_view.dart';
+import 'package:fruite_app/features/auth/presentation/views/signin_view.dart';
 import 'package:fruite_app/features/on_boarding/presentation/widgets/on_boarding_page_view.dart';
 import 'package:fruite_app/generated/l10n.dart';
 
@@ -64,7 +64,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                  Prefs.setBool(kIsOnBoardingViewSeen, true);
                 Navigator.of(
                   context,
-                ).pushReplacementNamed(LoginView.routeName);
+                ).pushReplacementNamed(SignInView.routeName);
               },
             ),
           ),
