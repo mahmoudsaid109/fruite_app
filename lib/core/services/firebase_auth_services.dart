@@ -37,4 +37,39 @@ class FirebaseAuthServices {
       );
     }
   }
+
+  Future<User> signInWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) async {
+    try {
+      final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+      );
+      return credential.user!;
+    } on FirebaseAuthException catch (e) {
+      log(
+        "FirebaseAuthException in signInWithEmailAndPassword: ${e.toString()} and code ${e.code}",
+      );
+      if (e.code == 'user-not-found') {
+        throw CustomException(message: 'No user found for that email.');
+      } else if (e.code == 'wrong-password') {
+        throw CustomException(
+          message: 'Wrong password provided for that user.',
+        );
+      } else if (e.code == 'network-request-failed') {
+        throw CustomException(
+          message: 'Wrong password provided for that user.',
+        );
+      } else {
+        throw CustomException(message: 'An undefined Error happened.');
+      }
+    } catch (e) {
+      log("Error in signInWithEmailAndPassword: ${e.toString()}");
+      throw CustomException(
+        message: 'An Error occurred. Please try again later.',
+      );
+    }
+  }
 }
