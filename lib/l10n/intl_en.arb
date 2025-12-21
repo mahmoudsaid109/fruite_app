@@ -22,5 +22,6 @@
     "createNewAccount":"Create New Account",
     "haveAnAccount":"Already have an account?",
     "fieldRequired":"This field is required",
-    "passwordIsTooWeak":"The password you provided is too weak"
+    "passwordIsTooWeak":"The password you provided is too weak",
+    "pleaseAcceptTerms":"Please accept the terms and conditions"
 }

@@ -63,6 +63,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "passwordIsTooWeak": MessageLookupByLibrary.simpleMessage(
       "The password you provided is too weak",
     ),
+    "pleaseAcceptTerms": MessageLookupByLibrary.simpleMessage(
+      "Please accept the terms and conditions",
+    ),
     "register": MessageLookupByLibrary.simpleMessage("New Account"),
     "searcAndShop": MessageLookupByLibrary.simpleMessage("Search and Shop"),
     "skip": MessageLookupByLibrary.simpleMessage("Skip"),

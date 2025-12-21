@@ -22,7 +22,8 @@
     "createNewAccount":"إنشاء حساب جديد",
     "haveAnAccount":"تمتلك حساب بالفعل ؟",
     "fieldRequired":"هذا الحقل مطلوب",
-    "passwordIsTooWeak":"كلمة المرور التي أدخلتها ضعيفة جدا"
+    "passwordIsTooWeak":"كلمة المرور التي أدخلتها ضعيفة جدا",
+    "pleaseAcceptTerms":"يرجى قبول الشروط والأحكام"
 
 
 }

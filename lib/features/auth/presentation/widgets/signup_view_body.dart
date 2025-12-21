@@ -59,19 +59,34 @@ class _SignupViewBodyState extends State<SignupViewBody> {
               SizedBox(height: kTopPaddding),
               TermsAndConditionsWidget(
                 onChanged: (value) {
-                  isTermsAccepted = value;
+                  setState(() {
+                    isTermsAccepted = value;
+                  });
                 },
               ),
               SizedBox(height: 30),
               CustomButton(
+                backgroundColor:
+                    isTermsAccepted ? AppColors.primaryColor : Colors.grey,
+
                 onPressed: () {
-                  if (formKey.currentState!.validate() && isTermsAccepted) {
+                  if (formKey.currentState!.validate()) {
                     formKey.currentState!.save();
-                    context.read<SignupCubit>().createUserWithEmailAndPassword(
-                      email,
-                      password,
-                      userName,
-                    );
+                    if (isTermsAccepted) {
+                      context
+                          .read<SignupCubit>()
+                          .createUserWithEmailAndPassword(
+                            email,
+                            password,
+                            userName,
+                          );
+                    } else {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(S.of(context).pleaseAcceptTerms),
+                        ),
+                      );
+                    }
                   } else {
                     setState(() {
                       autovalidateMode = AutovalidateMode.always;

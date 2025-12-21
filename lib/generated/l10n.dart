@@ -248,6 +248,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Please accept the terms and conditions`
+  String get pleaseAcceptTerms {
+    return Intl.message(
+      'Please accept the terms and conditions',
+      name: 'pleaseAcceptTerms',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
