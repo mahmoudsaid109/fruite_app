@@ -68,7 +68,6 @@ class _SignupViewBodyState extends State<SignupViewBody> {
               CustomButton(
                 backgroundColor:
                     isTermsAccepted ? AppColors.primaryColor : Colors.grey,
-
                 onPressed: () {
                   if (formKey.currentState!.validate()) {
                     formKey.currentState!.save();

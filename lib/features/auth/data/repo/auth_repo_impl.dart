@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:dartz/dartz.dart';
 import 'package:fruite_app/core/errors/exceptions.dart';
 import 'package:fruite_app/core/errors/failure.dart';
@@ -22,9 +24,12 @@ class AuthRepoImpl extends AuthRepo {
         password: password,
       );
       return right(UserModel.fromFirebaseUser(user));
-    } on CustomException catch (e) { 
+    } on CustomException catch (e) {
       return left(ServerFailure(e.message));
     } catch (e) {
+      log(
+        "Error in AuthRepoImpl - createUserWithEmailAndPassword: ${e.toString()}",
+      );
       return left(ServerFailure(e.toString()));
     }
   }
