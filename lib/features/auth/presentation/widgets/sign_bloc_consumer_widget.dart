@@ -6,12 +6,12 @@ import 'package:fruite_app/features/auth/presentation/cubits/signin_cubit/signin
 import 'package:fruite_app/features/auth/presentation/widgets/signin_view_body.dart';
 import 'package:fruite_app/features/home/presentation/views/home_layout_view.dart';
 
-class SignBlocConsumerWidget extends StatelessWidget {
-  const SignBlocConsumerWidget({super.key});
+class SignInBlocConsumerWidget extends StatelessWidget {
+  const SignInBlocConsumerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<SigInCubit, SignState>(
+    return BlocConsumer<SignInCubit, SignInState>(
       listener: (context, state) {
         if (state is SignSuccess) {
           Navigator.of(context).pushReplacementNamed(HomeLayoutView.routeName);

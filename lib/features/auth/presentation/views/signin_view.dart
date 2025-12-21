@@ -14,10 +14,10 @@ class SignInView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => SigInCubit(getIt.get<AuthRepo>()),
+      create: (context) => SignInCubit(getIt.get<AuthRepo>()),
       child: Scaffold(
         appBar: buildAppBar(context, title: S.of(context).login),
-        body: SignBlocConsumerWidget(),
+        body: SignInBlocConsumerWidget(),
       ),
     );
   }

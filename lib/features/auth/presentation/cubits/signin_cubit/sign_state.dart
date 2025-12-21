@@ -1,17 +1,17 @@
 part of 'signin_cubit.dart';
 
-sealed class SignState extends Equatable {
-  const SignState();
+sealed class SignInState extends Equatable {
+  const SignInState();
 
   @override
   List<Object> get props => [];
 }
 
-final class SignInitial extends SignState {}
+final class SignInitial extends SignInState {}
 
-final class SignLoading extends SignState {}
+final class SignLoading extends SignInState {}
 
-final class SignSuccess extends SignState {
+final class SignSuccess extends SignInState {
   final UserEntity userEntity;
 
   const SignSuccess({required this.userEntity});
@@ -20,7 +20,7 @@ final class SignSuccess extends SignState {
   List<Object> get props => [userEntity];
 }
 
-final class SignFailure extends SignState {
+final class SignFailure extends SignInState {
   final String errorMessage;
   const SignFailure(this.errorMessage);
   @override
