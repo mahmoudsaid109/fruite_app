@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:fruite_app/core/global_widgets/custom_button.dart';
 import 'package:fruite_app/core/global_widgets/custome_text_form_field.dart';
+import 'package:fruite_app/core/global_widgets/password_field.dart';
 import 'package:fruite_app/core/utils/app_colors.dart';
 import 'package:fruite_app/core/utils/app_images.dart';
 import 'package:fruite_app/core/utils/app_text_styles.dart';
@@ -12,8 +13,8 @@ import 'package:fruite_app/features/auth/presentation/widgets/or_widget.dart';
 import 'package:fruite_app/features/auth/presentation/widgets/social_login_button.dart';
 import 'package:fruite_app/generated/l10n.dart';
 
-class LoginViewBody extends StatelessWidget {
-  const LoginViewBody({super.key});
+class SignInViewBody extends StatelessWidget {
+  const SignInViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,13 +31,10 @@ class LoginViewBody extends StatelessWidget {
                 icon: Icon(Icons.email, color: AppColors.textFieldIconColor),
               ),
               SizedBox(height: kTopPaddding),
-              CustomeTextFormField(
-                hintText: S.of(context).password,
-                textInputType: TextInputType.visiblePassword,
-                icon: Icon(
-                  Icons.remove_red_eye,
-                  color: AppColors.textFieldIconColor,
-                ),
+              PasswordField(
+                onSaved: (value) {
+                  // password = value!;
+                },
               ),
               SizedBox(height: kTopPaddding),
               Align(
