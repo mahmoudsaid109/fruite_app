@@ -53,14 +53,17 @@ class FirebaseAuthServices {
         "FirebaseAuthException in signInWithEmailAndPassword: ${e.toString()} and code ${e.code}",
       );
       if (e.code == 'user-not-found') {
-        throw CustomException(message: 'No user found for that email.');
+        throw CustomException(
+          message: 'Wrong password or email provided for that user.',
+        );
       } else if (e.code == 'wrong-password') {
         throw CustomException(
-          message: 'Wrong password provided for that user.',
+          message: 'Wrong password or email provided for that user.',
         );
       } else if (e.code == 'network-request-failed') {
         throw CustomException(
-          message: 'Wrong password provided for that user.',
+          message:
+              'Network error. Please check your internet connection and try again.',
         );
       } else {
         throw CustomException(message: 'An undefined Error happened.');
