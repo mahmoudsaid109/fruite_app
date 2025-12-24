@@ -22,50 +22,44 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-    "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
-      "من خلال إنشاء حساب ، فإنك توافق على",
-    ),
-    "createAccount": MessageLookupByLibrary.simpleMessage("قم بإنشاء حساب"),
-    "createNewAccount": MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
-    "discoverAppTitle1": MessageLookupByLibrary.simpleMessage(
-      "اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية.",
-    ),
-    "discoverAppTitle2": MessageLookupByLibrary.simpleMessage(
-      "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية",
-    ),
-    "dontHaveAnAccount": MessageLookupByLibrary.simpleMessage("لا تمتلك حساب؟"),
-    "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
-    "fieldRequired": MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
-    "forgotPassword": MessageLookupByLibrary.simpleMessage(
-      "هل نسيت كلمة المرور؟",
-    ),
-    "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
-    "haveAnAccount": MessageLookupByLibrary.simpleMessage(
-      "تمتلك حساب بالفعل ؟",
-    ),
-    "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
-    "loginWithApple": MessageLookupByLibrary.simpleMessage("تسجيل بواسطةأبل"),
-    "loginWithFacebook": MessageLookupByLibrary.simpleMessage(
-      "تسجيل بواسطة فيسبوك",
-    ),
-    "loginWithGoogle": MessageLookupByLibrary.simpleMessage(
-      "تسجيل بواسطة جوجل",
-    ),
-    "or": MessageLookupByLibrary.simpleMessage("أو"),
-    "ourTermsAndConditions": MessageLookupByLibrary.simpleMessage(
-      "الشروط والأحكام الخاصة بنا",
-    ),
-    "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
-    "passwordIsTooWeak": MessageLookupByLibrary.simpleMessage(
-      "كلمة المرور التي أدخلتها ضعيفة جدا",
-    ),
-    "pleaseAcceptTerms": MessageLookupByLibrary.simpleMessage(
-      "يرجى قبول الشروط والأحكام",
-    ),
-    "register": MessageLookupByLibrary.simpleMessage("حساب جديد"),
-    "searcAndShop": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
-    "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
-    "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
-    "welcome": MessageLookupByLibrary.simpleMessage("مرحبا بك في "),
-  };
+        "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
+            "من خلال إنشاء حساب ، فإنك توافق على"),
+        "createAccount": MessageLookupByLibrary.simpleMessage("قم بإنشاء حساب"),
+        "createNewAccount":
+            MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
+        "discoverAppTitle1": MessageLookupByLibrary.simpleMessage(
+            "اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة واحصل على أفضل العروض والجودة العالية."),
+        "discoverAppTitle2": MessageLookupByLibrary.simpleMessage(
+            "نقدم لك أفضل الفواكه المختارة بعناية. اطلع على التفاصيل والصور والتقييمات لتتأكد من اختيار الفاكهة المثالية"),
+        "dontHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("لا تمتلك حساب؟"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "fieldRequired":
+            MessageLookupByLibrary.simpleMessage("هذا الحقل مطلوب"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
+        "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
+        "haveAnAccount":
+            MessageLookupByLibrary.simpleMessage("تمتلك حساب بالفعل ؟"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "loginWithApple":
+            MessageLookupByLibrary.simpleMessage("تسجيل بواسطةأبل"),
+        "loginWithFacebook":
+            MessageLookupByLibrary.simpleMessage("تسجيل بواسطة فيسبوك"),
+        "loginWithGoogle":
+            MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل"),
+        "or": MessageLookupByLibrary.simpleMessage("أو"),
+        "ourTermsAndConditions":
+            MessageLookupByLibrary.simpleMessage("الشروط والأحكام الخاصة بنا"),
+        "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "passwordIsTooWeak": MessageLookupByLibrary.simpleMessage(
+            "كلمة المرور التي أدخلتها ضعيفة جدا"),
+        "pleaseAcceptTerms":
+            MessageLookupByLibrary.simpleMessage("يرجى قبول الشروط والأحكام"),
+        "register": MessageLookupByLibrary.simpleMessage("حساب جديد"),
+        "searcAndShop": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
+        "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+        "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+        "welcome": MessageLookupByLibrary.simpleMessage("مرحبا بك في ")
+      };
 }

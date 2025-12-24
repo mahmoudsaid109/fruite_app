@@ -80,7 +80,9 @@ class _SignInViewBodyState extends State<SignInViewBody> {
               OrDivider(),
               SizedBox(height: kTopPaddding),
               SocialLoginButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.read<SignInCubit>().signInWithGoogle();
+                },
                 image: Assets.imagesGoogleIcon,
                 title: S.of(context).loginWithGoogle,
               ),
@@ -99,7 +101,9 @@ class _SignInViewBodyState extends State<SignInViewBody> {
                   : SizedBox(),
               SizedBox(height: 24),
               SocialLoginButton(
-                onPressed: () {},
+                onPressed: () {
+                  context.read<SignInCubit>().signInWithFacebook();
+                },
                 image: Assets.imagesFacebookIcon,
                 title: S.of(context).loginWithFacebook,
               ),
