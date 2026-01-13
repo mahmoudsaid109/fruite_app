@@ -62,7 +62,8 @@ class AuthRepoImpl extends AuthRepo {
         email: email,
         password: password,
       );
-      return right(UserModel.fromFirebaseUser(user));
+      var userEntity = await getUserData(userId: user.uid);
+      return right(userEntity);
     } on CustomException catch (e) {
       return left(ServerFailure(e.message));
     } catch (e) {
@@ -75,9 +76,9 @@ class AuthRepoImpl extends AuthRepo {
 
   @override
   Future<Either<Failure, UserEntity>> signInWitGoogle() async {
-    User ? user;
+    User? user;
     try {
-       user = await firebaseAuthServices.signInWithGoogle();
+      user = await firebaseAuthServices.signInWithGoogle();
       var userEntity = UserModel.fromFirebaseUser(user);
       await addUserData(user: userEntity);
       return right(userEntity);
@@ -101,6 +102,19 @@ class AuthRepoImpl extends AuthRepo {
 
   @override
   Future addUserData({required UserEntity user}) async {
-    await databaseServices.addData(Endpoint.addUserData, user.toMap());
+    await databaseServices.addData(
+      Endpoint.addUserData,
+      user.toMap(),
+      user.id,
+    );
+  }
+
+  @override
+  Future<UserEntity> getUserData({required String userId}) async {
+    var userData = await databaseServices.getData(
+      collectionPath: Endpoint.getUserData,
+      documentId: userId,
+    );
+    return UserModel.fromJson(userData);
   }
 }
