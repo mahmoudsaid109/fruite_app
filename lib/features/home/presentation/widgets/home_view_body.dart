@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fruite_app/core/global_widgets/search_text_field.dart';
 import 'package:fruite_app/core/utils/constants.dart';
 import 'package:fruite_app/features/home/presentation/widgets/custom_home_appbar.dart';
-import 'package:fruite_app/features/home/presentation/widgets/featured_item.dart';
+import 'package:fruite_app/features/home/presentation/widgets/featured_list.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});
@@ -32,7 +32,7 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                   SizedBox(
                     height: 12,
                   ),
-                  FeaturedItem()
+                  FeaturedList()
               ],
             ),
           )
