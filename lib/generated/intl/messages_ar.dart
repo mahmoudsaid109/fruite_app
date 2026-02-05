@@ -45,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
         "haveAnAccount":
             MessageLookupByLibrary.simpleMessage("تمتلك حساب بالفعل ؟"),
+        "kilo": MessageLookupByLibrary.simpleMessage("الكيلو"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginWithApple":
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطةأبل"),
@@ -61,6 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "كلمة المرور التي أدخلتها ضعيفة جدا"),
         "pleaseAcceptTerms":
             MessageLookupByLibrary.simpleMessage("يرجى قبول الشروط والأحكام"),
+        "pound": MessageLookupByLibrary.simpleMessage("جنيه"),
         "register": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "searcAndShop": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
         "searchFor": MessageLookupByLibrary.simpleMessage("ابحث عن......"),

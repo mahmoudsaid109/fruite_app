@@ -45,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "goodMorning": MessageLookupByLibrary.simpleMessage("Good Morning !.."),
         "haveAnAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
+        "kilo": MessageLookupByLibrary.simpleMessage("Kilo"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginWithApple":
             MessageLookupByLibrary.simpleMessage("Login with Apple"),
@@ -61,6 +62,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "The password you provided is too weak"),
         "pleaseAcceptTerms": MessageLookupByLibrary.simpleMessage(
             "Please accept the terms and conditions"),
+        "pound": MessageLookupByLibrary.simpleMessage("Pound"),
         "register": MessageLookupByLibrary.simpleMessage("New Account"),
         "searcAndShop": MessageLookupByLibrary.simpleMessage("Search and Shop"),
         "searchFor": MessageLookupByLibrary.simpleMessage("Search for......"),

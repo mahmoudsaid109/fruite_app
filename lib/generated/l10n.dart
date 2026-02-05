@@ -369,6 +369,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Pound`
+  String get pound {
+    return Intl.message(
+      'Pound',
+      name: 'pound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Kilo`
+  String get kilo {
+    return Intl.message(
+      'Kilo',
+      name: 'kilo',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
