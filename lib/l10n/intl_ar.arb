@@ -24,5 +24,9 @@
     "fieldRequired": "هذا الحقل مطلوب",
     "passwordIsTooWeak": "كلمة المرور التي أدخلتها ضعيفة جدا",
     "pleaseAcceptTerms": "يرجى قبول الشروط والأحكام",
-    "goodMorning": "صباح الخير !.."
+    "goodMorning": "صباح الخير !..",
+    "searchFor": "ابحث عن......",
+    "shoppingNow": "تسوق الآن",
+    "eidOffers": "عروض العيد",
+    "discount25": "خصم 25٪"
 }

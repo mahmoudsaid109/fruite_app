@@ -27,6 +27,7 @@ dependencies:
   shared_preferences: ^2.5.3
   svg_flutter: ^0.0.1
   cloud_firestore: ^6.1.1
+  flutter_svg_provider: ^1.0.7
 
 dev_dependencies:
   flutter_launcher_icons: ^0.14.4

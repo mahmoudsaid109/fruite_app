@@ -27,12 +27,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
+        "discount25": MessageLookupByLibrary.simpleMessage("25% Discount"),
         "discoverAppTitle1": MessageLookupByLibrary.simpleMessage(
             "Discover a unique shopping experience with FruitHUB. Explore our wide selection of premium fresh fruits and enjoy the best deals and top quality."),
         "discoverAppTitle2": MessageLookupByLibrary.simpleMessage(
             "We offer you the finest carefully selected fruits. Check out the details, photos, and reviews to make sure you choose the perfect fruit."),
         "dontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
+        "eidOffers": MessageLookupByLibrary.simpleMessage("Eid Offers"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "fieldRequired":
             MessageLookupByLibrary.simpleMessage("This field is required"),
@@ -59,6 +61,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please accept the terms and conditions"),
         "register": MessageLookupByLibrary.simpleMessage("New Account"),
         "searcAndShop": MessageLookupByLibrary.simpleMessage("Search and Shop"),
+        "searchFor": MessageLookupByLibrary.simpleMessage("Search for......"),
+        "shoppingNow": MessageLookupByLibrary.simpleMessage("Shop Now"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "startNow": MessageLookupByLibrary.simpleMessage("Start Now"),
         "welcome": MessageLookupByLibrary.simpleMessage("Welcome to ")

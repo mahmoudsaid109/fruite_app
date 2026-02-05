@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fruite_app/core/utils/app_images.dart';
 import 'package:fruite_app/core/utils/app_text_styles.dart';
+import 'package:fruite_app/generated/l10n.dart';
 import 'package:svg_flutter/svg.dart';
 
 class SearchTextField extends StatelessWidget {
@@ -39,7 +40,7 @@ class SearchTextField extends StatelessWidget {
           hintStyle: TextStyles.regular13.copyWith(
             color: const Color(0xFF949D9E),
           ),
-          hintText: 'ابحث عن.......',
+          hintText:S.of(context).searchFor,
           filled: true,
           fillColor: Colors.white,
           border: buildBorder(),

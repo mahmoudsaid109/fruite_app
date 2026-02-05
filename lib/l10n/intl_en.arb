@@ -24,5 +24,9 @@
     "fieldRequired": "This field is required",
     "passwordIsTooWeak": "The password you provided is too weak",
     "pleaseAcceptTerms": "Please accept the terms and conditions",
-    "goodMorning": "Good Morning !.."
+    "goodMorning": "Good Morning !..",
+    "searchFor": "Search for......",
+    "shoppingNow": "Shop Now",
+    "eidOffers": "Eid Offers",
+    "discount25": "25% Discount"
 }

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:fruite_app/core/global_widgets/search_text_field.dart';
+import 'package:fruite_app/core/utils/constants.dart';
 import 'package:fruite_app/features/home/presentation/widgets/custom_home_appbar.dart';
+import 'package:fruite_app/features/home/presentation/widgets/featured_item.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});
@@ -11,12 +14,30 @@ class HomeViewBody extends StatefulWidget {
 class _HomeViewBodyState extends State<HomeViewBody> {
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        SliverToBoxAdapter(
-          child: CustomHomeAppBar(),
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      child: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child: Column(
+              children: [
+                 SizedBox(
+                    height: kTopPaddding,
+                  ),
+                  CustomHomeAppBar(),
+                  SizedBox(
+                    height: kTopPaddding,
+                  ),
+                  SearchTextField(),
+                  SizedBox(
+                    height: 12,
+                  ),
+                  FeaturedItem()
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
