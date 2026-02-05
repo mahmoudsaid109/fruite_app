@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fruite_app/core/global_widgets/search_text_field.dart';
 import 'package:fruite_app/core/utils/constants.dart';
+import 'package:fruite_app/features/home/presentation/widgets/best_selling_header_widget.dart';
 import 'package:fruite_app/features/home/presentation/widgets/custom_home_appbar.dart';
 import 'package:fruite_app/features/home/presentation/widgets/featured_list.dart';
 
@@ -32,7 +33,11 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                   SizedBox(
                     height: 12,
                   ),
-                  FeaturedList()
+                  FeaturedList(),
+                  SizedBox(
+                    height: 12,
+                  ),
+                  BestSellingHeader(),
               ],
             ),
           )

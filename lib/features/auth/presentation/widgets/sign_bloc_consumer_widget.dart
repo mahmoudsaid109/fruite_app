@@ -14,7 +14,7 @@ class SignInBlocConsumerWidget extends StatelessWidget {
     return BlocConsumer<SignInCubit, SignInState>(
       listener: (context, state) {
         if (state is SignSuccess) {
-          Navigator.of(context).pushReplacementNamed(HomeLayoutView.routeName);
+          Navigator.of(context).pushNamedAndRemoveUntil(HomeLayoutView.routeName, (route) => false);
         }
         if (state is SignFailure) {
           buildErrorSnackBar(context, state.errorMessage);
