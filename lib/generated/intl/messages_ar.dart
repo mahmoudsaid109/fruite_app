@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
         "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
+        "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
         "haveAnAccount":
             MessageLookupByLibrary.simpleMessage("تمتلك حساب بالفعل ؟"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
