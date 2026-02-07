@@ -25,6 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "bestSelling": MessageLookupByLibrary.simpleMessage("الأكثر مبيعًا"),
         "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
             "من خلال إنشاء حساب ، فإنك توافق على"),
+        "cart": MessageLookupByLibrary.simpleMessage("سلة التسوق"),
         "createAccount": MessageLookupByLibrary.simpleMessage("قم بإنشاء حساب"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
@@ -45,6 +46,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "goodMorning": MessageLookupByLibrary.simpleMessage("صباح الخير !.."),
         "haveAnAccount":
             MessageLookupByLibrary.simpleMessage("تمتلك حساب بالفعل ؟"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "kilo": MessageLookupByLibrary.simpleMessage("الكيلو"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginWithApple":
@@ -63,6 +65,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "pleaseAcceptTerms":
             MessageLookupByLibrary.simpleMessage("يرجى قبول الشروط والأحكام"),
         "pound": MessageLookupByLibrary.simpleMessage("جنيه"),
+        "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
+        "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "register": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "searcAndShop": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
         "searchFor": MessageLookupByLibrary.simpleMessage("ابحث عن......"),

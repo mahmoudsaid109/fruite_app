@@ -32,5 +32,9 @@
     "bestSelling": "Best Selling",
     "more": "More",
     "pound": "Pound",
-    "kilo": "Kilo"
+    "kilo": "Kilo",
+    "home": "Home",
+    "cart": "Shopping Cart",
+    "profile": "Profile",
+    "products": "Products"
 }
