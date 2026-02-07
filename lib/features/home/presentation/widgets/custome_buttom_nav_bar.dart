@@ -36,7 +36,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
         ],
       ),
       child: Row(
-        children: bottomNavigationBarItems.asMap().entries.map((e) {
+        children: bottomNavigationBarItems(context).asMap().entries.map((e) {
           var index = e.key;
           var entity = e.value;
 

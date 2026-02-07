@@ -34,7 +34,7 @@
     "pound": "Pound",
     "kilo": "Kilo",
     "home": "Home",
-    "cart": "Shopping Cart",
-    "profile": "Profile",
+    "shoppingCart": "Shopping Cart",
+    "myAccount": "My Account",
     "products": "Products"
 }

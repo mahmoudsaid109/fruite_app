@@ -401,20 +401,20 @@ class S {
   }
 
   /// `Shopping Cart`
-  String get cart {
+  String get shoppingCart {
     return Intl.message(
       'Shopping Cart',
-      name: 'cart',
+      name: 'shoppingCart',
       desc: '',
       args: [],
     );
   }
 
-  /// `Profile`
-  String get profile {
+  /// `My Account`
+  String get myAccount {
     return Intl.message(
-      'Profile',
-      name: 'profile',
+      'My Account',
+      name: 'myAccount',
       desc: '',
       args: [],
     );

@@ -25,7 +25,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "bestSelling": MessageLookupByLibrary.simpleMessage("Best Selling"),
         "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
             "By creating an account, you agree to"),
-        "cart": MessageLookupByLibrary.simpleMessage("Shopping Cart"),
         "createAccount": MessageLookupByLibrary.simpleMessage("Create Account"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
@@ -56,6 +55,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginWithGoogle":
             MessageLookupByLibrary.simpleMessage("Login with Google"),
         "more": MessageLookupByLibrary.simpleMessage("More"),
+        "myAccount": MessageLookupByLibrary.simpleMessage("My Account"),
         "or": MessageLookupByLibrary.simpleMessage("Or"),
         "ourTermsAndConditions":
             MessageLookupByLibrary.simpleMessage("our Terms and Conditions"),
@@ -66,10 +66,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "Please accept the terms and conditions"),
         "pound": MessageLookupByLibrary.simpleMessage("Pound"),
         "products": MessageLookupByLibrary.simpleMessage("Products"),
-        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "register": MessageLookupByLibrary.simpleMessage("New Account"),
         "searcAndShop": MessageLookupByLibrary.simpleMessage("Search and Shop"),
         "searchFor": MessageLookupByLibrary.simpleMessage("Search for......"),
+        "shoppingCart": MessageLookupByLibrary.simpleMessage("Shopping Cart"),
         "shoppingNow": MessageLookupByLibrary.simpleMessage("Shop Now"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "startNow": MessageLookupByLibrary.simpleMessage("Start Now"),

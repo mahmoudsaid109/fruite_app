@@ -25,7 +25,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "bestSelling": MessageLookupByLibrary.simpleMessage("الأكثر مبيعًا"),
         "byCreatingAccount": MessageLookupByLibrary.simpleMessage(
             "من خلال إنشاء حساب ، فإنك توافق على"),
-        "cart": MessageLookupByLibrary.simpleMessage("سلة التسوق"),
         "createAccount": MessageLookupByLibrary.simpleMessage("قم بإنشاء حساب"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
@@ -56,6 +55,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "loginWithGoogle":
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطة جوجل"),
         "more": MessageLookupByLibrary.simpleMessage("المزيد"),
+        "myAccount": MessageLookupByLibrary.simpleMessage("حسابي"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
         "ourTermsAndConditions":
             MessageLookupByLibrary.simpleMessage("الشروط والأحكام الخاصة بنا"),
@@ -66,10 +66,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("يرجى قبول الشروط والأحكام"),
         "pound": MessageLookupByLibrary.simpleMessage("جنيه"),
         "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
-        "profile": MessageLookupByLibrary.simpleMessage("الملف الشخصي"),
         "register": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "searcAndShop": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
         "searchFor": MessageLookupByLibrary.simpleMessage("ابحث عن......"),
+        "shoppingCart": MessageLookupByLibrary.simpleMessage("سلة التسوق"),
         "shoppingNow": MessageLookupByLibrary.simpleMessage("تسوق الآن"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
         "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
