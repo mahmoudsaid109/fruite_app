@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fruite_app/core/global_widgets/notification_widget.dart';
 import '../utils/app_text_styles.dart';
 
-AppBar buildAppBar(context,
+AppBar notifyAppBar(context,
     {required String title,
     bool showBackButton = true,
     bool showNotification = true}) {
