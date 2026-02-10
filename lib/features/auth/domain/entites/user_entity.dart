@@ -9,7 +9,5 @@ class UserEntity extends Equatable {
 
   @override
   List<Object?> get props => [id, name, email];
-  toMap() {
-    return {'id': id, 'name': name, 'email': email};
-  }
+ 
 }
